@@ -1,0 +1,248 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #1e1e1e; /* Dark background */
+    color: #fff;
+    padding: 0.5rem 2rem; /* Adjust padding for a more compact look */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ccc; /* Light gray for links */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f1c40f; /* Gold color on hover */
+}
+
+/* Buttons */
+header .auth-buttons {
+    display: flex;
+}
+
+.auth-buttons a {
+    color: #fff;
+    border: 1px solid #f1c40f; /* Gold border */
+    padding: 0.5rem 1rem;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.auth-buttons a:hover {
+    background-color: #f1c40f; /* Gold background on hover */
+    color: #1e1e1e; /* Dark text on hover */
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Container */
+.login-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f7f7f7;
+    overflow: hidden; /* Prevents overflow if necessary */
+}
+
+/* Left side with image */
+.login-left {
+    flex: 1;
+    height: 100%;
+    position: relative;
+    background: url('{% static 'images/background.jpg' %}') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire container */
+}
+
+/* Right side with form */
+.login-right {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.login-right h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.login-right p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.input-group .icon {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #888;
+}
+
+input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 0;
+    outline: none;
+}
+
+.login-button {
+    background-color: #7f53ac;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.login-button:hover {
+    background-color: #5e4097;
+}
+
+.basic-version {
+    margin-top: 15px;
+    display: block;
+    text-align: right;
+    color: #7f53ac;
+    text-decoration: none;
+}
+
+.basic-version:hover {
+    text-decoration: underline;
+}
+
+/* Make same style for the signup page. The only difference is the  form action URL. */
+.signup-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f7f7f7;
+    overflow: hidden; /* Prevents overflow if necessary */
+}
+
+.signup-left {
+    flex: 1;
+    height: 100%;
+    background: url('{% static 'images/background.jpg' %}') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire container */
+    position: relative;
+}
+
+.signup-right {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.signup-right h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.signup-right p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.signup-button {
+    background-color: #7f53ac;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.signup-button:hover {
+    background-color: #5e4097;
+}
+
+

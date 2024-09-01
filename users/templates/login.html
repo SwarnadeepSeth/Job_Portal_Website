@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block content %}
+<div class="login-container">
+    <div class="login-left">
+        <img src="{% static 'images/logo.webp' %}" alt="Login"> 
+    </div>
+    <div class="login-right">
+        <h2>We are <strong>GlobalTeacherSearch</strong></h2>
+        <p>Welcome back! Log in to your account:</p>
+        <form method="post">
+            {% csrf_token %}
+            <div class="input-group">
+                <span class="icon">@</span>
+                {{ form.username }}
+            </div>
+            <div class="input-group">
+                <span class="icon">&#128274;</span>
+                {{ form.password }}
+            </div>
+            <button type="submit" class="login-button">Log In</button>
+        </form>
+        <a href="#" class="basic-version">Back to Homepage</a>
+    </div>
+</div>
+{% endblock %}

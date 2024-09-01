@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Sign Up
+{% endblock %}
+
+{% block content %}
+<div class="signup-container">
+    <div class="signup-left">
+        <img src="{% static 'images/logo.webp' %}" alt="Sign Up">
+    </div>
+    <div class="signup-right">
+        <h2>We are <strong>GlobalTeacherSearch</strong></h2>
+        <p>Sign up to create an account:</p>
+        <form method="post">
+            {% csrf_token %}
+            Username:
+            <div class="input-group">
+                {{ form.username }}
+            </div>
+            Email:
+            <div class="input-group">
+                {{ form.email }}
+            </div>
+            Password: 
+            <div class="input-group">
+                {{ form.password1 }}
+            </div>
+            Retype Password:
+            <div class="input-group">
+                {{ form.password2 }}
+            </div>
+            <button type="submit" class="signup-button">Sign Up</button>
+        </form>
+        <br>
+        <a href="{% url 'login' %}" class="login-link">Already have an account? Log in</a>
+    </div>
+</div>
+{% endblock %}
