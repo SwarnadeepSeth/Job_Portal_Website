@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home | Global Tutor Search
+{% endblock %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <div class="hero-section" style="background-image: url('/static/images/hero-bg.jpg');">
+        <div class="hero-content">
+            <h1>Welcome to Global Tutor Search</h1>
+            <p>Connecting teachers and students worldwide for a brighter educational future.</p>
+            <a href="/teachers/" class="btn btn-primary">Find a Teacher</a>
+            <a href="#" class="btn btn-secondary">Find a Student</a>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-item">
+                <img src="/static/images/teacher-icon.png" alt="Find a Teacher">
+                <h3>Find a Teacher</h3>
+                <p>Browse through a diverse pool of qualified educators who are eager to help you achieve your academic goals. Each profile includes detailed information, credentials, and reviews from previous students.</p>
+                <ul>
+                    <li>Search by subject, location, or rating</li>
+                    <li>Read detailed profiles and reviews</li>
+                    <li>Message teachers directly to schedule sessions</li>
+                </ul>
+            </div>
+            <div class="feature-item">
+                <img src="/static/images/student-icon.png" alt="Find a Student">
+                <h3>Find a Student</h3>
+                <p>Connect with motivated learners from around the globe who are searching for your expertise. Post your qualifications and teaching specialties to attract students who need your skills.</p>
+                <ul>
+                    <li>Post your teaching profile and services</li>
+                    <li>Review student profiles and learning needs</li>
+                    <li>Set your own rates and availability</li>
+                </ul>
+            </div>
+            <div class="feature-item">
+                <img src="/static/images/chat-icon.png" alt="Connect Instantly">
+                <h3>Connect Instantly</h3>
+                <p>Our integrated messaging system allows you to communicate seamlessly with potential students or teachers. Schedule sessions, discuss learning objectives, and make arrangements effortlessly.</p>
+                <ul>
+                    <li>Secure and private messaging system</li>
+                    <li>Real-time notifications for new messages</li>
+                    <li>Easy scheduling and session management</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2>Why Choose GlobalTutorSearch?</h2>
+            <div class="benefit-item">
+                <h3>Global Reach</h3>
+                <p>Connect with educators and learners from across the globe. No matter where you are, you can find or offer high-quality education.</p>
+            </div>
+            <div class="benefit-item">
+                <h3>Quality Assurance</h3>
+                <p>All profiles are verified to ensure that you receive or offer top-notch educational experiences. Reviews and ratings help maintain high standards.</p>
+            </div>
+            <div class="benefit-item">
+                <h3>Easy to Use</h3>
+                <p>Our user-friendly interface makes finding and connecting with teachers or students a breeze. Enjoy a seamless experience with intuitive navigation and powerful search tools.</p>
+            </div>
+            <div class="benefit-item">
+                <h3>Flexible and Customizable</h3>
+                <p>Set your own rates, schedule, and teaching methods. Tailor your educational experience to meet your needs and preferences.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial-item">
+                <img src="/static/images/user1.jpg" alt="Sarah K.">
+                <p>"Global Tutor Search has been a game-changer for my child's education. The variety of teachers and the ease of connecting with them has made a significant difference." - <strong>Sarah K.</strong></p>
+            </div>
+            <div class="testimonial-item">
+                <img src="/static/images/user2.jpg" alt="Michael S.">
+                <p>"As an educator, I found this platform invaluable. It allowed me to reach students who are truly passionate about learning, and the communication tools are top-notch." - <strong>Michael S.</strong></p>
+            </div>
+            <div class="testimonial-item">
+                <img src="/static/images/user3.jpg" alt="Emily R.">
+                <p>"I love how easy it is to find the right tutor for my needs. The reviews and profiles give me confidence that I’m making the right choice for my education." - <strong>Emily R.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="call-to-action">
+        <div class="container">
+            <h2>Ready to Join Us?</h2>
+            <p>Whether you're looking to teach or learn, Global Tutor Search offers the perfect platform to connect with the right people. Sign up today and start your educational journey with us.</p>
+            <a href="{% url 'signup' %}" class="btn btn-primary">Sign Up Now</a>
+        </div>
+    </section>
+{% endblock %}
